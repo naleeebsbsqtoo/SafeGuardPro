@@ -1,7 +1,8 @@
-package com.quartetoelegante.safeguardpro
+package com.quartetoelegante.safeguardpro.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.quartetoelegante.safeguardpro.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
