@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ListfunFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:background="#ff8200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="83dp"
+        android:src="@drawable/safeguardpro_removebg_preview__1_"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="33dp"
+        android:text="Colaborador"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:text="Funcionários"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="#989797"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="112dp" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/textViewnome"
+                android:layout_width="129dp"
+                android:layout_height="25dp"
+                android:text="Lucas"
+                android:textSize="20dp"
+                tools:layout_editor_absoluteX="83dp"
+                tools:layout_editor_absoluteY="13dp" />
+
+            <TextView
+                android:id="@+id/textViewcpf"
+                android:layout_width="129dp"
+                android:layout_height="25dp"
+                android:text="11122233304"
+                android:textSize="18dp"
+                tools:layout_editor_absoluteX="247dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="48dp"
+                android:layout_height="40dp"
+                android:src="@drawable/funcionarioex"
+                tools:layout_editor_absoluteX="16dp"
+                tools:layout_editor_absoluteY="5dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="48dp"
+        android:layout_height="44dp"
+        android:backgroundTint="#989797"
+        app:cardCornerRadius="15dp"
+        tools:layout_editor_absoluteX="354dp"
+        tools:layout_editor_absoluteY="624dp" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#989797">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/adicionar"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="6dp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        android:background="#ff8200"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

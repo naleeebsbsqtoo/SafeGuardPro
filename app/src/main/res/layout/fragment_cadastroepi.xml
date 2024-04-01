@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".view.CadastroepiFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="414dp"
+        android:layout_height="85dp"
+        android:background="#ff8200"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="-4dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="91dp"
+        android:layout_height="83dp"
+        android:src="@drawable/safeguardpro_removebg_preview__1_"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/view"
+        android:layout_width="315dp"
+        android:layout_height="496dp"
+        android:background="@color/design_default_color_secondary"
+        app:cardCornerRadius="25dp"
+        tools:layout_editor_absoluteX="49dp"
+        tools:layout_editor_absoluteY="135dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tvlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="CADASTRO EPI"
+                android:textColor="#ff8200"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="67dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <EditText
+                android:id="@+id/edtvalidade"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Digite a Validade"
+                android:inputType="number"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="212dp" />
+
+            <TextView
+                android:id="@+id/tvvalidade"
+                android:layout_width="304dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="Validade:"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="19dp"
+                tools:layout_editor_absoluteY="183dp" />
+
+            <TextView
+                android:id="@+id/tvitem"
+                android:layout_width="303dp"
+                android:layout_height="27dp"
+                android:layout_gravity="center"
+                android:text="Item: "
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="12dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <EditText
+                android:id="@+id/edtuso"
+                android:layout_width="271dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:hint="Digite o modo de uso"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="20dp"
+                tools:layout_editor_absoluteY="307dp" />
+
+            <TextView
+                android:id="@+id/tvuso"
+                android:layout_width="297dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:text="Instruções"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="18dp"
+                tools:layout_editor_absoluteY="273dp" />
+
+            <EditText
+                android:id="@+id/edtNome"
+                android:layout_width="282dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:hint="Nome do item"
+                android:inputType="text"
+                tools:layout_editor_absoluteX="14dp"
+                tools:layout_editor_absoluteY="108dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:backgroundTint="@color/black"
+                android:text="Cadastrar"
+                android:textSize="20sp"
+                tools:layout_editor_absoluteX="82dp"
+                tools:layout_editor_absoluteY="379dp" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="133dp"
+        android:layout_height="33dp"
+        android:text="Colaborador"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="262dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="3dp"
+        android:background="#ff8200"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
