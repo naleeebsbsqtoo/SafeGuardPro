@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    tools:context=".view.DetalheEpiFragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:id="@+id/tvnomeepi"
+                android:layout_width="174dp"
+                android:layout_height="24dp"
+                android:text="EPIs:  Capacete"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical|start"
+                android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvinstrucoes"
+                android:layout_width="305dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical|start"
+                android:text="Instruções:  O capacete deve ficar posicionado acima da cabeça"
+                android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tventrega"
+                android:layout_width="192dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical|start"
+                android:text="Entrega:  25/03/2024"
+                android:textSize="20dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/tvvalidade"
+                android:layout_width="212dp"
+                android:layout_height="23dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical|start"
+                android:text="Validade:  24/12/2024"
+                android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -9,38 +9,21 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="414dp"
-        android:layout_height="85dp"
-        android:background="#ff8200"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="-2dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="91dp"
-        android:layout_height="83dp"
-        android:src="@drawable/safeguardpro_removebg_preview__1_"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-2dp" />
-
     <androidx.cardview.widget.CardView
         android:id="@+id/view"
         android:layout_width="315dp"
         android:layout_height="496dp"
         android:background="@color/design_default_color_secondary"
         app:cardCornerRadius="25dp"
-        tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="135dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <TextView
                 android:id="@+id/tvlogin"
@@ -51,28 +34,7 @@
                 android:textColor="#ff8200"
                 android:textSize="26sp"
                 android:textStyle="bold"
-                tools:layout_editor_absoluteX="120dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <EditText
-                android:id="@+id/edtcpf"
-                android:layout_width="275dp"
-                android:layout_height="40dp"
-                android:layout_gravity="center"
-                android:hint="Digite seu cpf"
-                android:inputType="number"
-                tools:layout_editor_absoluteX="19dp"
-                tools:layout_editor_absoluteY="212dp" />
-
-            <TextView
-                android:id="@+id/tvcpf"
-                android:layout_width="304dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:text="CPF:"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="19dp"
-                tools:layout_editor_absoluteY="183dp" />
+                android:layout_marginTop="20dp"/>
 
             <TextView
                 android:id="@+id/tvNome"
@@ -80,29 +42,7 @@
                 android:layout_height="27dp"
                 android:layout_gravity="center"
                 android:text="Nome: "
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="12dp"
-                tools:layout_editor_absoluteY="80dp" />
-
-            <EditText
-                android:id="@+id/edtsenha"
-                android:layout_width="271dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:hint="Digite sua senha"
-                android:inputType="text"
-                tools:layout_editor_absoluteX="20dp"
-                tools:layout_editor_absoluteY="307dp" />
-
-            <TextView
-                android:id="@+id/tvsenha"
-                android:layout_width="297dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                android:text="Senha"
-                android:textSize="20sp"
-                tools:layout_editor_absoluteX="18dp"
-                tools:layout_editor_absoluteY="273dp" />
+                android:textSize="20sp"/>
 
             <EditText
                 android:id="@+id/edtNome"
@@ -110,9 +50,39 @@
                 android:layout_height="44dp"
                 android:layout_gravity="center"
                 android:hint="Digite seu nome"
-                android:inputType="text"
-                tools:layout_editor_absoluteX="14dp"
-                tools:layout_editor_absoluteY="108dp" />
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tvcpf"
+                android:layout_width="304dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="CPF:"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edtcpf"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Digite seu cpf"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/tvsenha"
+                android:layout_width="297dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:text="Senha"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edtsenha"
+                android:layout_width="271dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center"
+                android:hint="Digite sua senha"
+                android:inputType="text"/>
 
             <Button
                 android:id="@+id/btnLogin"
@@ -121,17 +91,10 @@
                 android:backgroundTint="@color/black"
                 android:text="Entrar"
                 android:textSize="20sp"
-                tools:layout_editor_absoluteX="103dp"
-                tools:layout_editor_absoluteY="382dp" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+        </LinearLayout>
 
     </androidx.cardview.widget.CardView>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="3dp"
-        android:background="#ff8200"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

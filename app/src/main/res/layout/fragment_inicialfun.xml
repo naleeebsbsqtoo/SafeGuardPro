@@ -8,48 +8,18 @@
     tools:context=".view.InicialfunFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_width="414dp"
-        android:layout_height="85dp"
-        android:background="#ff8200"
-        android:minHeight="?attr/actionBarSize"
-        android:theme="?attr/actionBarTheme"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="-4dp" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="91dp"
-        android:layout_height="83dp"
-        android:src="@drawable/safeguardpro_removebg_preview__1_"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="-2dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="133dp"
-        android:layout_height="33dp"
-        android:text="Funcionário"
-        android:textColor="@color/black"
-        android:textSize="24sp"
-        tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="26dp" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="419dp"
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
         android:layout_height="54dp"
         android:background="#ff8200"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="678dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView3"
@@ -68,14 +38,14 @@
         android:layout_height="50dp"
         android:src="@drawable/capacete"
         tools:layout_editor_absoluteX="262dp"
-        tools:layout_editor_absoluteY="682dp" />
+        tools:layout_editor_absoluteY="754dp" />
 
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="45dp"
         android:layout_height="51dp"
         android:src="@drawable/homeex"
-        tools:layout_editor_absoluteX="87dp"
-        tools:layout_editor_absoluteY="678dp" />
+        tools:layout_editor_absoluteX="82dp"
+        tools:layout_editor_absoluteY="753dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
 
+    <fragment
+        android:id="@+id/detalheFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.DetalheEpiFragment"
+        android:label="Detalhes"
+        tools:layout="@layout/fragment_detalhe_epi" />
+    <fragment
+        android:id="@+id/listfunFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.ListfunFragment"
+        android:label="Lista de funcionarios"
+        tools:layout="@layout/fragment_listfun" />
+    <fragment
+        android:id="@+id/cadastrofunFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.CadastrofunFragment"
+        android:label="Cadastro para funcionario"
+        tools:layout="@layout/fragment_cadastrofun" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.LoginFragment"
+        android:label="Login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/cadastroepiFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.CadastroepiFragment"
+        android:label="Cadastro de EPIs"
+        tools:layout="@layout/fragment_cadastroepi" />
+    <fragment
+        android:id="@+id/inicialFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.InicialFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicial" />
+    <fragment
+        android:id="@+id/inicialfunFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.InicialfunFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_inicialfun" />
+    <fragment
+        android:id="@+id/inventarioFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.InventarioFragment"
+        android:label="Inventario"
+        tools:layout="@layout/fragment_inventario" />
+    <fragment
+        android:id="@+id/entregaFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.EntregaFragment"
+        android:label="fragment_entrega"
+        tools:layout="@layout/fragment_entrega" />
 </navigation>
