@@ -33,25 +33,24 @@
                 android:text="ENTREGA DE EPIs"
                 android:textAlignment="center"
                 android:textColor="#ff8200"
-                android:textSize="24sp"
+                android:textSize="20sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="8dp"/>
 
             <TextView
                 android:id="@+id/tvNome"
                 android:layout_width="303dp"
-                android:layout_height="27dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:text="Nome: "
-                android:textSize="20sp"
-                android:layout_marginTop="20dp"/>
+                android:textSize="20sp" />
 
             <EditText
-                android:id="@+id/edtepi"
+                android:id="@+id/edtnome"
                 android:layout_width="271dp"
-                android:layout_height="43dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
-                android:hint="Digite o epi"
+                android:hint="Digite o funcionario"
                 android:inputType="text"/>
 
 
@@ -71,31 +70,88 @@
                 android:hint="Digite o cpf"
                 android:inputType="number"/>
 
-
             <TextView
                 android:id="@+id/tvepi"
                 android:layout_width="297dp"
-                android:layout_height="32dp"
+                android:layout_height="24dp"
                 android:layout_gravity="center"
                 android:text="EPI: "
                 android:textSize="20sp"/>
 
             <EditText
-                android:id="@+id/edtNome"
+                android:id="@+id/edtepi"
                 android:layout_width="282dp"
-                android:layout_height="44dp"
+                android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:hint="Digite o funcionário"
+                android:hint="Digite a epi"
+                android:inputType="text" />
+
+            <TextView
+                android:id="@+id/tvdataentrega"
+                android:layout_width="297dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="Data de entrega: "
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edtdataentrega"
+                android:layout_width="282dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:hint="Digite a data"
+                android:inputType="text"/>
+
+            <TextView
+                android:id="@+id/tvtempouso"
+                android:layout_width="304dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Tempo de uso:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edttempouso"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Digite o tempo de uso"
+                android:inputType="number" />
+
+            <TextView
+                android:id="@+id/tvvalidade"
+                android:layout_width="297dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:text="Data de validade: "
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/edtvalidade"
+                android:layout_width="282dp"
+                android:layout_height="39dp"
+                android:layout_gravity="center"
+                android:hint="Digite a data"
                 android:inputType="text"/>
 
             <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="158dp"
-                android:layout_height="45dp"
+                android:id="@+id/btnEntregar"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
                 android:backgroundTint="@color/black"
-                android:text="Entregar"
-                android:textSize="20sp"
+                android:text="Enviar"
+                android:textSize="16sp"
                 android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/btnExcluirentrega"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:text="Excluir"
+                android:textSize="15sp" />
 
         </LinearLayout>
 

@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding: ActivityMainBinding get() = _binding!!
 
-    val menuScreens = listOf(R.id.inicialFragment, R.id.listfunFragment, R.id.inventarioFragment)
+    val menuScreens = listOf(R.id.inicialFragment, R.id.funcionariosFragment, R.id.inventarioFragment)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

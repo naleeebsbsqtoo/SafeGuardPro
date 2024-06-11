@@ -11,10 +11,10 @@
         android:label="Detalhes"
         tools:layout="@layout/fragment_detalhe_epi" />
     <fragment
-        android:id="@+id/listfunFragment"
-        android:name="com.quartetoelegante.safeguardpro.view.ListfunFragment"
+        android:id="@+id/funcionariosFragment"
+        android:name="com.quartetoelegante.safeguardpro.view.FuncionariosFragment"
         android:label="Lista de funcionarios"
-        tools:layout="@layout/fragment_listfun" />
+        tools:layout="@layout/fragment_funcionarios" />
     <fragment
         android:id="@+id/cadastrofunFragment"
         android:name="com.quartetoelegante.safeguardpro.view.CadastrofunFragment"
@@ -50,4 +50,9 @@
         android:name="com.quartetoelegante.safeguardpro.view.EntregaFragment"
         android:label="fragment_entrega"
         tools:layout="@layout/fragment_entrega" />
+    <fragment
+        android:id="@+id/entregasFragment2"
+        android:name="com.quartetoelegante.safeguardpro.view.EntregasFragment"
+        android:label="fragment_entregas"
+        tools:layout="@layout/fragment_entregas" />
 </navigation>

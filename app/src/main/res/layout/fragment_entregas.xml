@@ -5,15 +5,15 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.InventarioFragment">
+    tools:context=".view.EntregasFragment">
 
     <!-- TODO: Update blank fragment layout -->
 
     <TextView
-        android:id="@+id/tvInventEpi"
+        android:id="@+id/tvInventEntregas"
         android:layout_width="wrap_content"
         android:layout_height="25dp"
-        android:text="Inventário EPIs"
+        android:text="Inventário Entregas"
         android:textColor="#989797"
         android:textSize="22dp"
         android:textStyle="bold"
@@ -23,15 +23,15 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvInventario"
+        android:id="@+id/rvInventarioEntrega"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAdd"
-        app:layout_constraintTop_toBottomOf="@+id/tvInventEpi"
-        tools:listitem="@layout/list_item_epi"/>
+        app:layout_constraintBottom_toTopOf="@+id/btnAdd3"
+        app:layout_constraintTop_toBottomOf="@+id/tvInventEntregas"
+        tools:listitem="@layout/list_item_entrega"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btnAdd"
+        android:id="@+id/btnAdd3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/adicionar"

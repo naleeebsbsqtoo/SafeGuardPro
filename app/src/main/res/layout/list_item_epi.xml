@@ -20,7 +20,7 @@
             android:background="#FFFFFF">
 
             <TextView
-                android:id="@+id/textViewnome"
+                android:id="@+id/tvnomeepi"
                 android:layout_width="129dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical|start"
@@ -29,7 +29,7 @@
                 android:textSize="20dp" />
 
             <TextView
-                android:id="@+id/textViewvalidade"
+                android:id="@+id/tvvalidade"
                 android:layout_width="129dp"
                 android:layout_height="25dp"
                 android:layout_gravity="center_vertical|start"

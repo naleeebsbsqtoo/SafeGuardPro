@@ -7,8 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import com.quartetoelegante.safeguardpro.R
-import com.quartetoelegante.safeguardpro.databinding.FragmentInventarioBinding
-import com.quartetoelegante.safeguardpro.databinding.FragmentListfunBinding
 import com.quartetoelegante.safeguardpro.databinding.FragmentLoginBinding
 
 class LoginFragment : Fragment() {

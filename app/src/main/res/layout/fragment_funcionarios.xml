@@ -5,9 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".view.ListfunFragment">
-
-    <!-- TODO: Update blank fragment layout -->
+    tools:context=".view.FuncionariosFragment">
 
     <TextView
         android:id="@+id/textView3"
@@ -23,12 +21,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvFuncionarios"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/btnAdd2"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="-25dp"
         tools:listitem="@layout/list_item_func" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

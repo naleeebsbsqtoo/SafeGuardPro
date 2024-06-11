@@ -57,6 +57,23 @@
                 android:inputType="text" />
 
             <TextView
+                android:id="@+id/tvtempouso"
+                android:layout_width="304dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:text="Tempo de uso:"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edttempouso"
+                android:layout_width="275dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:hint="Digite o tempo de uso"
+                android:inputType="number" />
+
+            <TextView
                 android:id="@+id/tvvalidade"
                 android:layout_width="304dp"
                 android:layout_height="24dp"
@@ -98,6 +115,16 @@
                 android:backgroundTint="@color/black"
                 android:text="Cadastrar"
                 android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnExcluirepi"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:text="Excluir"
+                android:textSize="15sp" />
+
         </LinearLayout>
 
     </androidx.cardview.widget.CardView>

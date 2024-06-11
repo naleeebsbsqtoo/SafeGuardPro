@@ -69,31 +69,24 @@
                 android:hint="Digite seu cpf"
                 android:inputType="number" />
 
-            <TextView
-                android:id="@+id/tvepi"
-                android:layout_width="297dp"
-                android:layout_height="32dp"
-                android:layout_gravity="center"
-                android:text="EPI: "
-                android:textSize="20sp" />
-
-            <EditText
-                android:id="@+id/edtepi"
-                android:layout_width="271dp"
-                android:layout_height="43dp"
-                android:layout_gravity="center"
-                android:hint="Digite o epi"
-                android:inputType="text" />
-
             <Button
                 android:id="@+id/btnCadastrofun"
                 android:layout_width="152dp"
                 android:layout_height="43dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="40dp"
                 android:backgroundTint="@color/black"
                 android:text="Cadastrar"
                 android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/btnExcluirfun"
+                android:layout_width="110dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:backgroundTint="@color/black"
+                android:text="Excluir"
+                android:textSize="15sp" />
 
         </LinearLayout>
 
