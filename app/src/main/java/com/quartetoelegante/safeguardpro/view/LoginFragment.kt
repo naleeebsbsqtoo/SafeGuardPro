@@ -45,7 +45,7 @@ class LoginFragment : Fragment() {
         }
 
         viewModelFuncionario.funcionario.observe(viewLifecycleOwner) {
-            if (it.nome == senha && it.id == cpf.toInt()) {
+            if (it.senha == senha && it.cpf == cpf) {
                 Login.userConected(it.id, it.cpf, it.admin)
                 if (it.admin) {
                     findNavController().navigate(R.id.entregasFragment)
@@ -53,8 +53,7 @@ class LoginFragment : Fragment() {
                     findNavController().navigate(R.id.inicialfunFragment)
                 }
             } else {
-                Toast.makeText(requireContext(), "Usuario ou senha inválidos", Toast.LENGTH_LONG)
-                    .show()
+                Toast.makeText(requireContext(), "Usuario ou senha inválidos", Toast.LENGTH_LONG).show()
             }
         }
     }
