@@ -82,5 +82,4 @@ class EntregaViewModel(apllication: Application) : AndroidViewModel(apllication)
             }
         }
     }
-
 }

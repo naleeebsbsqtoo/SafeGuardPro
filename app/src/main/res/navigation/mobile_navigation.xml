@@ -6,7 +6,7 @@
     app:startDestination="@id/loginFragment">
 
     <fragment
-        android:id="@+id/detalheFragment"
+        android:id="@+id/detalheEpiFragment"
         android:name="com.quartetoelegante.safeguardpro.view.DetalheEpiFragment"
         android:label="Detalhes"
         tools:layout="@layout/fragment_detalhe_epi" />
@@ -31,11 +31,6 @@
         android:label="Cadastro de EPIs"
         tools:layout="@layout/fragment_cadastroepi" />
     <fragment
-        android:id="@+id/inicialFragment"
-        android:name="com.quartetoelegante.safeguardpro.view.InicialFragment"
-        android:label="Inicio"
-        tools:layout="@layout/fragment_inicial" />
-    <fragment
         android:id="@+id/inicialfunFragment"
         android:name="com.quartetoelegante.safeguardpro.view.InicialfunFragment"
         android:label="Inicio"
@@ -51,7 +46,7 @@
         android:label="fragment_entrega"
         tools:layout="@layout/fragment_entrega" />
     <fragment
-        android:id="@+id/entregasFragment2"
+        android:id="@+id/entregasFragment"
         android:name="com.quartetoelegante.safeguardpro.view.EntregasFragment"
         android:label="fragment_entregas"
         tools:layout="@layout/fragment_entregas" />

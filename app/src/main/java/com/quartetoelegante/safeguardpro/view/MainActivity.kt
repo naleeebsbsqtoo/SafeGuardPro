@@ -22,7 +22,11 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding: ActivityMainBinding get() = _binding!!
 
-    val menuScreens = listOf(R.id.inicialFragment, R.id.funcionariosFragment, R.id.inventarioFragment)
+    private val menuScreens = listOf(
+        R.id.entregasFragment,
+        R.id.funcionariosFragment,
+        R.id.inventarioFragment
+    )
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,12 +46,22 @@ class MainActivity : AppCompatActivity() {
             controller.currentDestination?.let {
                 if (it.id == R.id.loginFragment){
                     binding.bottomNavigation.visibility = View.GONE
+                    binding.toolbar.visibility = View.GONE
                 } else{
                     binding.bottomNavigation.visibility = View.VISIBLE
+                    binding.toolbar.visibility = View.VISIBLE
                 }
 
                 if (it.id in menuScreens){
                     destination.parent?.setStartDestination(it.id)
+                }
+
+                if (it.id == R.id.entregasFragment) {
+                    binding.bottomNavigation.menu.clear()
+                    binding.bottomNavigation.inflateMenu(R.menu.rodape)
+                } else if (it.id == R.id.inicialfunFragment) {
+                    binding.bottomNavigation.menu.clear()
+                    binding.bottomNavigation.inflateMenu(R.menu.rodape_fun)
                 }
             }
         }

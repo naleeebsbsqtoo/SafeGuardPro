@@ -29,7 +29,7 @@ class InventarioFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentInventarioBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -42,7 +42,7 @@ class InventarioFragment : Fragment() {
             val epiBundle = Bundle()
             epiBundle.putInt("epiId", epi.id)
             arguments = epiBundle
-            findNavController().navigate(R.id.inventarioFragment, arguments)
+            findNavController().navigate(R.id.cadastroepiFragment, arguments)
         }
 
         //Configurar a recycler
@@ -58,7 +58,6 @@ class InventarioFragment : Fragment() {
 
         //carregar epis cadastradas
         viewModel.loadEpis()
-        Toast.makeText(requireContext(), "passou load", Toast.LENGTH_LONG).show()
 
         viewModel.erro.observe(viewLifecycleOwner) {
             Log.e( "erro","Epis: $it")

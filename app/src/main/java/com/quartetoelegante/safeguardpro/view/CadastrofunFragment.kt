@@ -47,6 +47,9 @@ class CadastrofunFragment : Fragment() {
         binding.btnCadastrofun.setOnClickListener {
             val nome = binding.edtNome.editableText.toString()
             val cpf = binding.edtcpf.editableText.toString()
+//            TODO Adicionar os campos no xml
+//            val senha = binding.edtSenha.editableText.toString()
+//            val admin = binding.chkAdmin.isChecked()
 
             if (nome != "" && cpf != ""){
                 val funcionario = Funcionario(

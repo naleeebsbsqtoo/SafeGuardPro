@@ -8,6 +8,7 @@
     tools:context=".view.InicialfunFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEpis"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/list_item_epi"/>

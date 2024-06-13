@@ -74,6 +74,16 @@ class FuncionarioViewModel (apllication: Application): AndroidViewModel(apllicat
         }
     }
 
+    fun getFuncByCpf(cpf: String){
+        viewModelScope.launch(Dispatchers.IO){
+            try {
+                mFuncionario.postValue(repository.getFuncionarioByCpf(cpf))
+            } catch (e: Exception){
+                mErro.postValue(e.message)
+            }
+        }
+    }
+
     fun delete(id: Int){
         viewModelScope.launch(Dispatchers.IO){
             try {

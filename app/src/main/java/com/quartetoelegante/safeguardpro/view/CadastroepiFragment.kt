@@ -27,7 +27,7 @@ class CadastroepiFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentCadastroepiBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -35,12 +35,19 @@ class CadastroepiFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        //Carregar a pessoa caso tenha selecionado
+        arguments?.let {
+            viewModel.getEpi(it.getInt("epiId"))
+        }
+
         //navegar para a lista de epi
         binding.btnCadastroepi.setOnClickListener {
             val item = binding.edtNome.editableText.toString()
             val validade = binding.edtvalidade.editableText.toString()
             val tempo = binding.edttempouso.editableText.toString()
             val uso = binding.edtuso.editableText.toString()
+//            TODO Adicionar o campo no xml
+//            val ca = binding.edtca.editableText.toString()
 
             if (item != "" && validade != "" && tempo !="" && uso != "") {
                 val epi = Epi(
@@ -65,7 +72,6 @@ class CadastroepiFragment : Fragment() {
             } else {
                 Toast.makeText(requireContext(), "Digite os dados", Toast.LENGTH_LONG).show()
             }
-            findNavController().navigate(R.id.inventarioFragment)
         }
 
         binding.btnExcluirepi.setOnClickListener {
@@ -79,6 +85,7 @@ class CadastroepiFragment : Fragment() {
                 .setNegativeButton("Não") { _, _ -> }
                 .show()
         }
+
         viewModel.epi.observe(viewLifecycleOwner) { epi ->
             binding.edtNome.setText(epi.nome)
             binding.edtvalidade.setText(epi.validade)

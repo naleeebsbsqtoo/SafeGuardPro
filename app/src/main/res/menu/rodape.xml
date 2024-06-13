@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/entregasFragment"
+        android:icon="@drawable/homeex"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/funcionariosFragment"
+        android:icon="@drawable/funcionarioex"
+        android:title="Funcionários" />
+
+    <item
+        android:id="@+id/inventarioFragment"
+        android:icon="@drawable/capacete"
+        android:title="EPIs" />
+</menu>

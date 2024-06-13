@@ -20,10 +20,8 @@ import com.quartetoelegante.safeguardpro.viewmodel.EpiViewModel
 class DetalheEpiFragment : Fragment() {
 
     //chamar viewmodel
-    private val viewModel: EntregaViewModel by viewModels()
+    private val viewModel: EpiViewModel by viewModels()
 
-    //chamar o adapter
-    private lateinit var adapter: EntregaAdapter
 
     private var _binding: FragmentDetalheEpiBinding? = null
     private val binding: FragmentDetalheEpiBinding get() = _binding!!
@@ -38,6 +36,19 @@ class DetalheEpiFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //Carregar a pessoa caso tenha selecionado
+        arguments?.let {
+            viewModel.getEpi(it.getInt("epiId"))
+        }
+
+        viewModel.epi.observe(viewLifecycleOwner) { epi ->
+            binding.tvnomeepi.text = epi.nome
+            binding.tvvalidade.text = epi.validade
+//           TODO Fazer relacionamento com a entrega ou excluir o campo
+//            binding.tventrega.text = epi.entrega
+            binding.tvinstrucoes.text = epi.instrucao
+        }
 
         viewModel.erro.observe(viewLifecycleOwner) {
             Log.e( "erro","Epis: $it")

@@ -29,7 +29,7 @@ class FuncionariosFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentFuncionariosBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -42,7 +42,7 @@ class FuncionariosFragment : Fragment() {
             val funcionarioBundle = Bundle()
             funcionarioBundle.putInt("funcionarioId", funcionario.id)
             arguments = funcionarioBundle
-            findNavController().navigate(R.id.funcionariosFragment, arguments)
+            findNavController().navigate(R.id.cadastrofunFragment, arguments)
         }
 
         //Configurar a recycler

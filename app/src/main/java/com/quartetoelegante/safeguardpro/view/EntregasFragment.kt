@@ -33,7 +33,7 @@ class EntregasFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentEntregasBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -46,7 +46,7 @@ class EntregasFragment : Fragment() {
             val entregaBundle = Bundle()
             entregaBundle.putInt("entregaId", entrega.id)
             arguments = entregaBundle
-            findNavController().navigate(R.id.entregasFragment, arguments)
+            findNavController().navigate(R.id.entregaFragment, arguments)
         }
 
         //Configurar a recycler

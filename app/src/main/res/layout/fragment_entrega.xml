@@ -71,20 +71,20 @@
                 android:inputType="number"/>
 
             <TextView
-                android:id="@+id/tvepi"
+                android:id="@+id/tvCa"
                 android:layout_width="297dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:text="EPI: "
+                android:text="CA: "
                 android:textSize="20sp"/>
 
             <EditText
-                android:id="@+id/edtepi"
+                android:id="@+id/edtCa"
                 android:layout_width="282dp"
                 android:layout_height="38dp"
                 android:layout_gravity="center"
-                android:hint="Digite a epi"
-                android:inputType="text" />
+                android:hint="Digite o ca"
+                android:inputType="number" />
 
             <TextView
                 android:id="@+id/tvdataentrega"
@@ -151,6 +151,7 @@
                 android:layout_gravity="center"
                 android:backgroundTint="@color/black"
                 android:text="Excluir"
+                android:visibility="gone"
                 android:textSize="15sp" />
 
         </LinearLayout>

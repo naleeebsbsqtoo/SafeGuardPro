@@ -33,6 +33,15 @@ class EpiRepository(context: Context) {
         }
     }
 
+    suspend fun getEpiByCa(ca: Int): Epi {
+        val response = mRemote.getEpiByCa(ca)
+        return if (response.isSuccessful) {
+            response.body()?.first() ?: epiEmpty
+        } else {
+            epiEmpty
+        }
+    }
+
     suspend fun updateEpi(epi: Epi): Epi {
         return mRemote.updateEpi(
             epiId = epi.id,

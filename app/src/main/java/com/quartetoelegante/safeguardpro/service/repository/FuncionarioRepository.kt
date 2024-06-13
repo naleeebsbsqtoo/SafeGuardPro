@@ -9,7 +9,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 
 class FuncionarioRepository(context: Context) {
     private val mRemote = RetrofitClient.createService(FuncionarioService::class.java)
-    private val funcionarioEmpty = Funcionario(0, "", "")
+    private val funcionarioEmpty = Funcionario(0, "", "", "")
 
     suspend fun getFuncionarios(): List<Funcionario> {
         return mRemote.getFuncionarios()
@@ -18,7 +18,9 @@ class FuncionarioRepository(context: Context) {
     suspend fun insertFunc(funcionario: Funcionario): Funcionario {
         return mRemote.createFunc(
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
-            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull())
+            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
+            senha = funcionario.senha.toRequestBody("text/plain".toMediaTypeOrNull()),
+            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
         ).body() ?: funcionarioEmpty
     }
 
@@ -31,11 +33,22 @@ class FuncionarioRepository(context: Context) {
         }
     }
 
+    suspend fun getFuncionarioByCpf(cpf: String): Funcionario {
+        val response = mRemote.getFuncByCpf(cpf)
+        return if (response.isSuccessful) {
+            response.body()?.first() ?: funcionarioEmpty
+        } else {
+            funcionarioEmpty
+        }
+    }
+
     suspend fun updateFunc(funcionario: Funcionario): Funcionario {
         return mRemote.updateFunc(
             funcionarioId = funcionario.id,
             nome = funcionario.nome.toRequestBody("text/plain".toMediaTypeOrNull()),
-            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull())
+            cpf = funcionario.cpf.toRequestBody("text/plain".toMediaTypeOrNull()),
+            senha = funcionario.senha.toRequestBody("text/plain".toMediaTypeOrNull()),
+            admin = funcionario.admin.toString().toRequestBody("text/plain".toMediaTypeOrNull()),
         ).body() ?: funcionarioEmpty
     }
 

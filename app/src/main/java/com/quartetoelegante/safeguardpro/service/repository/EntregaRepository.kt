@@ -15,7 +15,6 @@ class EntregaRepository(context: Context) {
     suspend fun getEntregas(): List<Entrega> {
         return mRemote.getEntregas()
     }
-
     suspend fun insertEntregas(entrega: Entrega): Entrega {
         return mRemote.createEntrega(
             data = entrega.data.toRequestBody("text/plain".toMediaTypeOrNull()),
